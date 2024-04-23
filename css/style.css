@@ -8,43 +8,43 @@ body {
   justify-content: space-between;
 }
 
-.header {
+header {
   padding: 1.5rem;
   background-color: #ce3729;
 }
 
-.header nav {
+header nav {
   display: flex;
   justify-content: end;
 }
 
-.header nav a {
+header nav a {
   margin-right: .8rem;
   text-decoration: none;
   color: #f9f9f9;
 }
 
-.header nav a:hover {
+header nav a:hover {
   color: #cecece;
 }
 
-.content {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.content img {
+main img {
   border-radius: 50%;
 }
 
-.content p {
+main p {
   font-size: 1.2em;
   max-width: 70%;
   text: pretty;
 }
 
-.footer {
+footer {
   display: flex;
   background-color: #f9f9f9;
   padding: 1.5rem 1rem;
