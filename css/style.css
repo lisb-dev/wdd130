@@ -53,12 +53,13 @@ p {
 aside {
   width: 20rem;
   text-align: center;
+  position: relative;
 }
 
-aside h1 {
-  position: absolute;
+aside h2 {
   top: 47px;
   left: 150px;
+  position: absolute;
 }
 
 aside img {
