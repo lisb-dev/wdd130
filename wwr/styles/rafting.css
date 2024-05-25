@@ -6,6 +6,8 @@
   --accent1-color: #1b60a0;
   --accent2-color: #53222c;
 
+  --banner-color: #ececec;
+
   --heading-font: "Roboto", sans-serif;
   --paragraph-font: "Nunito Sans", sans-serif;
 }
@@ -31,8 +33,47 @@ p {
   padding: 25px;
 }
 
+/* use grid to separate logo img from the nav inside the header */
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--banner-color);
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 219px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+
+.sociallinks {
+  display: flex;
+  gap: 20px;
+}
+
 .sociallinks a {
   text-decoration: none;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: auto;
 }
 
 .hero {
@@ -70,5 +111,33 @@ p {
 .hero article img {
   float: right;
   width: 300px;
+  height: auto;
+}
+
+.history {
+  text-align: center;
+}
+
+.adventures {
+  text-align: center;
+}
+
+.adventures-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.adventures-images h2 {
+  grid-column: 1 / -1;
+}
+
+.adventures-images figure {
+  width: 150px;
+  margin: 1rem;
+}
+
+.adventures-images figure img {
+  width: 100%;
   height: auto;
 }
