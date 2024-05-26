@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>White Water Rafting | Contact Us</title>
+    <meta name="description" content="Contact us through the contact form." />
+    <meta name="author" content="Gabriel Lisboa" />
+
+    <link href="styles/rafting.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Logo image" />
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Content -->
+      <section class="findus">
+        <h1>How to find us?</h1>
+
+        <span><strong>Address:</strong> 123 Main Street</span>
+        <span><strong>Phone Number:</strong> 555-555-5555</span>
+        <span><strong>Email:</strong> contact@whitewaterrafting.com</span>
+        <!-- Embeded Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7488407029055!2d-46.70308732287822!3d-23.64916406482719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce505799c65993%3A0xf919f0b075d4ed32!2sRua%20Comendador%20Elias%20Zarzur%2C%20365%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004736-000!5e0!3m2!1spt-BR!2sbr!4v1716687127023!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="ourteam">
+        <h2>Our Team</h2>
+
+        <article class="employees">
+          <figure>
+            <img src="images/martha.jpg" alt="Martha" />
+            <figcaption>Martha Smith - CEO</figcaption>
+          </figure>
+          <figure>
+            <img src="images/george.jpg" alt="George" />
+            <figcaption>George Johnson - CFO</figcaption>
+          </figure>
+          <figure>
+            <img src="images/john.jpg" alt="John" />
+            <figcaption>John Clark - COO</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="sendmessage">
+        <form action="#">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+
+          <label for="purpose">The purpose of the contact</label>
+          <fieldset id="purpose">
+            <input type="radio" id="general" name="general" value="0" />
+            <label for="general">General Inquiry</label>
+            <input type="radio" id="reservation" name="reservation" value="1" />
+            <label for="reservation">Reservation Question</label>
+            <input type="radio" id="suggestion" name="suggestion" value="2" />
+            <label for="suggestion">Website Suggestion</label>
+          </fieldset>
+
+          <label for="message"
+            >Please describe your inquiry in as much detail as possible</label
+          >
+          <textarea rows="4" name="message" id="message"></textarea>
+
+          <input type="checkbox" id="accept" name="accept" value="1" />
+          <label for="accept"
+            >Please subscribe me to the monthly newsletter</label
+          >
+
+          <button type="submit">Submit Quiz</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2024 Rafting Site Document | Gabriel Lisboa | WDD 130</p>
+
+      <nav class="sociallinks">
+        <a href="https://facebook.com">
+          <img src="images/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com">
+          <img src="images/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="images/instagram.png" alt="Instagram" />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
