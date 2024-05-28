@@ -192,18 +192,18 @@ footer {
   margin-bottom: 60px;
 }
 
-.sendmessage form {
+form {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.sendmessage form label {
+form label {
   display: block;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.sendmessage form input[type="text"],
+form input[type="text"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -211,29 +211,29 @@ textarea {
   border-radius: 5px;
 }
 
-.sendmessage form input[type="checkbox"] {
+form input[type="checkbox"] {
   display: inline-block;
   margin-right: 10px;
 }
 
-.sendmessage form label[for="accept"] {
+form label[for="accept"] {
   display: inline-block;
 }
 
-.sendmessage form fieldset {
+form fieldset {
   border: 0;
 }
 
-.sendmessage form fieldset input[type="radio"] {
+form fieldset input[type="radio"] {
   display: inline-block;
   margin-right: 10px;
 }
 
-.sendmessage form fieldset label {
+form fieldset label {
   display: inline-block;
 }
 
-.sendmessage form button[type="submit"] {
+form button[type="submit"] {
   display: block;
   margin-top: 20px;
   width: 100%;
@@ -286,11 +286,11 @@ textarea {
   border: 1px solid #ccc;
 }
 
-.contactus h2 {
+.calltoaction h2 {
   color: white;
 }
 
-.contactus {
+.calltoaction {
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -300,7 +300,7 @@ textarea {
   background-color: var(--primary-color);
 }
 
-.contactus a {
+.calltoaction a {
   display: block;
   margin-top: 20px;
   width: 250px;
@@ -313,4 +313,71 @@ textarea {
   font-size: 22px;
   text-align: center;
   text-decoration: none;
+}
+
+/* Home Page Styles */
+
+.welcome {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.welcome h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome h2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.newsletter {
+  padding: 25px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+  background-color: var(--banner-color);
+}
+
+/*A CSS grid layout with at least two additional images and corresponding content about the white water rafting site purpose and offerings.*/
+
+.offerings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: var(--banner-color);
+  padding: 25px;
+  margin-bottom: 60px;
+}
+
+.offerings img {
+  width: 100%;
+  height: auto;
+}
+
+.offerings h2 {
+  grid-column: span 2;
+}
+
+/* span the p to the whole grid*/
+.offerings p {
+  margin-top: 0;
+  grid-column: span 2;
+  text-align: center;
 }
