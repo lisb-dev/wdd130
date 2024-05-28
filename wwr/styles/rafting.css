@@ -245,3 +245,72 @@ textarea {
   cursor: pointer;
   font-size: 16px;
 }
+
+/* Trips Page Styles */
+
+.trips-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.trips-images figure {
+  width: 270px;
+  margin: 1rem;
+}
+
+.trips-images figure img {
+  width: 100%;
+  height: auto;
+}
+
+.trips-images figcaption {
+  text-align: center;
+}
+
+.availabletrips {
+  padding: 25px;
+  margin-bottom: 60px;
+  background-color: var(--banner-color);
+}
+
+.availabletrips table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.availabletrips table th,
+.availabletrips table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contactus h2 {
+  color: white;
+}
+
+.contactus {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.contactus a {
+  display: block;
+  margin-top: 20px;
+  width: 250px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+}
